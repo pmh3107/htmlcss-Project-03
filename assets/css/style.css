@@ -36,6 +36,7 @@ a {
 }
 .btn:hover {
   opacity: 0.5;
+  transition: all ease 0.5s;
 }
 .section-heading {
   color: #10375c;
@@ -313,6 +314,7 @@ a {
   padding: 43px 42px 43px 42px;
   width: 338px;
   height: 370px;
+  border-radius: 4px;
 }
 .work-item__icon {
   width: 72px;
@@ -337,4 +339,40 @@ a {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.75; /* 175% */
+}
+/* Feature */
+.feature {
+  margin: 170px 0;
+}
+.feature__inner {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.feature__images {
+  position: relative;
+  padding: 0 58px 121px 0;
+}
+.feature__img-01 {
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.feature__img-02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.feature__heading,
+.feature__desc {
+  text-align: left;
+}
+.feature__desc {
+  margin: 18px 0 32px;
 }
