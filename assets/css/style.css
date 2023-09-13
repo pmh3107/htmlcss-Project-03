@@ -378,13 +378,14 @@ a {
 }
 /* transform: translateX(-100%); */
 /* Member */
-.member {
-  margin-bottom: 170px;
-}
 .member-btn {
   display: block;
   margin: 38px auto 0;
   max-width: 205px;
+}
+.member-run-list {
+  display: flex;
+  overflow: hidden;
 }
 .member-list {
   display: flex;
@@ -393,8 +394,7 @@ a {
   margin-top: 70px;
   width: 100%;
   flex-shrink: 0;
-  overflow: hidden;
-  transition: all ease 0.5s;
+  transition: all ease 1s;
 }
 .member-item__img-bg {
   display: flex;
@@ -460,4 +460,46 @@ a {
 }
 .control-btn:hover .control-btn__svg {
   color: #ffffff;
+}
+/* Install */
+.install {
+  margin: 265px 0 170px;
+}
+.install__body {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  background-color: #2e80ce;
+}
+.install__img {
+  display: block;
+  width: 284px;
+  height: 522px;
+  margin: -95px 0 0 70px;
+  object-fit: cover;
+}
+.install__content {
+  max-width: 586px;
+}
+.install-heading {
+  width: 489px;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: -1px;
+}
+.install-desc {
+  color: #fff;
+  text-align: left;
+  width: 586px;
+  margin-bottom: 38px;
+}
+
+.install__btn {
+  background: transparent;
+  border: none;
+}
+.install__btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all ease-in 0.3s;
 }
