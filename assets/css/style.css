@@ -511,18 +511,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 130px;
 }
 .news__content {
   width: 40.2%;
 }
 .news-heading {
   text-align: left;
-}
-.news-list {
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }
 .news__link {
   display: block;
@@ -531,15 +525,27 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.55;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
 }
 .news__link:hover {
   color: #2e80ce;
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
 }
 .news-control {
   justify-content: start;
   margin: 28px 0 0 0;
+}
+.news-run-list {
+  display: flex;
+  width: 48.7%;
+  overflow: hidden;
+}
+.news-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  transition: all ease 0.5s;
 }
 .news-item {
   width: 270px;
@@ -547,10 +553,15 @@ a {
   border-radius: 12px;
   border: 1px solid #e8ebee;
   background: #fff;
+  transition: all ease 0.5s;
 }
-.news-item:hover,
-.news-item:hover .news-item__img {
+.news-item:hover {
   box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+  z-index: 1;
+}
+.news-item:hover .news-item__content {
+  background-color: #ffffff;
 }
 .news-item:hover .news-item__link {
   color: #2e80ce;
@@ -587,4 +598,42 @@ a {
   color: #10375c;
   font-size: 14px;
   font-weight: 400;
+}
+/* Appointment */
+.appointment {
+  margin-bottom: 170px;
+}
+.appointment-inner {
+  background-color: #f6fbff;
+  padding: 100px 0;
+}
+.appointment__underline {
+  display: block;
+  margin: 18px auto;
+  content: "";
+  width: 136px;
+  height: 2px;
+  background-color: #2e80ce;
+}
+.appointment__desc {
+  width: 617px;
+  margin: 18px auto 0;
+}
+.appointment__btn {
+  display: block;
+  max-width: 205px;
+  margin: 36px auto 0;
+}
+/* footer */
+.footer {
+  padding: 100px 0 42px 0;
+  background: #10375c;
+}
+.footer__desc {
+  margin-top: 22px;
+  width: 336px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
 }
